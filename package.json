@@ -3,7 +3,8 @@
   "scripts": {
     "dev": "bun run --hot src/index.ts",
     "prisma:init": "bunx prisma migrate dev --name init",
-    "prisma:migrate": "bunx prisma migrate dev --name init"
+    "prisma:migrate": "bunx prisma migrate dev --name init",
+    "lint": "bunx biome check --write"
   },
   "dependencies": {
     "@prisma/client": "^5.20.0",
