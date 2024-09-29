@@ -1,13 +1,8 @@
 import { Hono } from "hono";
 import { getPing } from "./getPing";
 
-const app =
-	new Hono();
+const app = new Hono();
 
-app.get(
-	"/",
-	...getPing,
-);
+app.get("/", ...getPing);
 
-export const pingRoute =
-	app;
+export const pingRoute = app;

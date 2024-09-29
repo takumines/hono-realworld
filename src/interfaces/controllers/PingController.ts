@@ -3,8 +3,7 @@ export class PingController {
 		return {
 			status: 200,
 			body: {
-				message:
-					"OK",
+				message: "OK",
 			},
 		};
 	}
