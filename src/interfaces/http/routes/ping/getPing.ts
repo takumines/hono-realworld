@@ -6,7 +6,7 @@ import { okResponse } from "../../response/response";
 const factory = createFactory();
 
 export const getPing = factory.createHandlers(async (c) => {
-	const pingController = new PingController();
+  const pingController = new PingController();
 
-	return okResponse(JSON.stringify(await pingController.getPing()));
+  return okResponse(JSON.stringify(await pingController.getPing()));
 });

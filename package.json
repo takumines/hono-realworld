@@ -1,17 +1,17 @@
 {
-	"name": "hono-realworld",
-	"scripts": {
-		"dev": "bun run --hot src/index.ts",
-		"prisma:init": "bunx prisma migrate dev --name init",
-		"prisma:migrate": "bunx prisma migrate dev --name init"
-	},
-	"dependencies": {
-		"@prisma/client": "^5.20.0",
-		"hono": "^4.6.3"
-	},
-	"devDependencies": {
-		"@biomejs/biome": "1.9.2",
-		"@types/bun": "latest",
-		"prisma": "^5.20.0"
-	}
+  "name": "hono-realworld",
+  "scripts": {
+    "dev": "bun run --hot src/index.ts",
+    "prisma:init": "bunx prisma migrate dev --name init",
+    "prisma:migrate": "bunx prisma migrate dev --name init"
+  },
+  "dependencies": {
+    "@prisma/client": "^5.20.0",
+    "hono": "^4.6.3"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "1.9.2",
+    "@types/bun": "latest",
+    "prisma": "^5.20.0"
+  }
 }
