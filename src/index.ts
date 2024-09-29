@@ -1,12 +1,12 @@
-import { Hono } from 'hono'
-import { pingRoute } from "./interfaces/http/routes/ping"
-import { logger } from "hono/logger"
+import { Hono } from "hono";
+import { logger } from "hono/logger";
+import { pingRoute } from "./interfaces/http/routes/ping";
 
-const app = new Hono()
+const app = new Hono();
 
 // ミドルウェアの登録
-app.use(logger())
+app.use(logger());
 
-app.route('/ping', pingRoute)
+app.route("/ping", pingRoute);
 
-export default app
+export default app;

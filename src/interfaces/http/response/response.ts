@@ -1,6 +1,6 @@
 const baseHeaders = {
-	'Content-Type': 'application/json',
-}
+	"Content-Type": "application/json",
+};
 
 /**
  * ステータスコード200のレスポンスを返す
