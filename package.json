@@ -2,8 +2,9 @@
   "name": "hono-realworld",
   "scripts": {
     "dev": "bun run --hot src/index.ts",
-    "prisma:init": "bunx prisma migrate dev --name init",
-    "prisma:migrate": "bunx prisma migrate dev --name init",
+    "prisma:migrate": "bunx prisma migrate dev --name --schema=./src/infrastructure/database/prisma/schema.prisma",
+    "prisma:generate": "bunx prisma generate --schema=./src/infrastructure//database/prisma/schema.prisma",
+    "prisma:validate": "bunx prisma validate --schema=./src/infrastructure/database/prisma/schema.prisma",
     "lint": "bunx biome check --write"
   },
   "dependencies": {
