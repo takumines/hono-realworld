@@ -1,7 +1,7 @@
 import { createFactory } from "hono/factory";
 
-import { PingController } from "../../../controllers/PingController";
-import { okResponse } from "../../response/response";
+import { PingController } from "../../../../adapters/controllers/PingController";
+import { okResponse } from "../../../../adapters/response/response";
 
 const factory = createFactory();
 
