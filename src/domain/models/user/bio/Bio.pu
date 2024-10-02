@@ -1,0 +1,13 @@
+@startuml Bio
+
+class "Bio" as Bio << (V, green) >> {
+    value: string
+}
+
+note bottom of Bio
+    プロフィール文
+    文字数の制限はない
+    任意で入力可能
+end note
+
+@enduml

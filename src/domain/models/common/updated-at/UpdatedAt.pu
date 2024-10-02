@@ -1,0 +1,13 @@
+@startuml
+
+class "UpdatedAt" as UpdatedAt << (V, green) >> {
+    value: Date
+}
+
+note bottom of UpdatedAt
+    更新日時
+end note
+
+Followers "1" -down- "N" FollowRelation : has >
+
+@enduml

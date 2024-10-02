@@ -1,0 +1,14 @@
+@startuml UserAggregation
+
+title ユーザー集約 (UserAggregation)
+
+package "UserAggregation" {
+    !include ./User.pu
+    !include ./profile/Profile.pu
+    !include ./follow-relation/FollowRelation.pu
+
+    User "1" -down- "1" Profile : has >
+    User "1" -down- "N" FollowRelation : has >
+}
+
+@enduml

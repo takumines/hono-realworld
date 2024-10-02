@@ -1,0 +1,16 @@
+@startuml Followers
+
+!include ../follow-relation/FollowRelation.pu
+
+class "Followers" as Followers << (V, green) >> {
+    value: FollowRelation[]
+}
+
+note bottom of Followers
+    フォローされているユーザーのIDリスト
+    自分自身のIDは含まれない
+end note
+
+Followers "1" -down- "N" FollowRelation : has >
+
+@enduml

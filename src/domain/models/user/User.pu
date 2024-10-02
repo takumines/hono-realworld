@@ -1,0 +1,32 @@
+@startuml User
+
+!include ./user-id/UserId.pu
+!include ./email/Email.pu
+!include ./password/Password.pu
+!include ./username/Username.pu
+!include ./following/Following.pu
+!include ./followers/Followers.pu
+!include ../common/created-at/CreatedAt.pu
+!include ../common/updated-at/UpdatedAt.pu
+
+class "User(ユーザー)" as User << (R, red) RootEntity >> {
+    id: UserId
+    email: Email
+    password: Password
+    username: Username
+    following: Following
+    followers: Followers
+    createdAt: CreatedAt
+    updatedAt: UpdatedAt
+}
+
+User *-down- UserId
+User *-down- Email
+User *-down- Password
+User *-down- Username
+User *-down- Following
+User *-down- Followers
+User *-down- CreatedAt
+User *-down- UpdatedAt
+
+@enduml

@@ -1,0 +1,13 @@
+@startuml FollowRelation
+
+!include ../user-id/UserId.pu
+
+class "FollowRelation(フォロー関係)" as FollowRelation << (V, green) >> {
+    followeeId: UserId
+    followerId: UserId
+}
+
+FollowRelation *-down- UserId
+FollowRelation *-down- UserId
+
+@enduml

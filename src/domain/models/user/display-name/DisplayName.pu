@@ -1,0 +1,13 @@
+@startuml DisplayName
+
+class "DisplayName" as DisplayName << (V, green) >> {
+    value: string
+}
+
+note bottom of DisplayName
+    表示名
+    MIN_LENGTH = 1
+    MAX_LENGTH = 255
+end note
+
+@enduml

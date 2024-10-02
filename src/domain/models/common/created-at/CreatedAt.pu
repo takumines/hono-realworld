@@ -1,0 +1,11 @@
+@startuml
+
+class "CreatedAt" as CreatedAt << (V, green) >> {
+    value: Date
+}
+
+note bottom of CreatedAt
+    作成日時
+end note
+
+@enduml

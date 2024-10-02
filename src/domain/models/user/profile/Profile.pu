@@ -1,0 +1,17 @@
+@startuml Profile
+
+!include ../display-name/DisplayName.pu
+!include ../bio/Bio.pu
+!include ../image/Image.pu
+
+class "Profile(プロフィール)" as Profile << (E, yellow) >> {
+    displayName: DisplayName
+    bio: Bio
+    image: Image
+}
+
+Profile *-down- DisplayName
+Profile *-down- Bio
+Profile *-down- Image
+
+@enduml

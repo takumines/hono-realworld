@@ -1,0 +1,12 @@
+@startuml Email
+
+class "Email" as Email << (V, green) >> {
+    value: string
+}
+
+note bottom of Email
+    ユニークなメールアドレス
+    MAX_LENGTH = 255
+end note
+
+@enduml

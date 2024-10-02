@@ -1,0 +1,13 @@
+@startuml Image
+
+class "Image" as Image << (V, green) >> {
+    value: string
+}
+
+note bottom of Image
+    画像URL
+    URLの形式
+    任意で入力可能
+end note
+
+@enduml

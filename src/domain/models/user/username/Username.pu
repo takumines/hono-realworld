@@ -1,0 +1,14 @@
+@startuml Username
+
+class "Username" as Username << (V, green) >> {
+    value: string
+}
+
+note bottom of Username
+    ユニークなユーザー名
+    アルファベット、数字、アンダースコアのみ
+    MIN_LENGTH = 4
+    MAX_LENGTH = 255
+end note
+
+@enduml
